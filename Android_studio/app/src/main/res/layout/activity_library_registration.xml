@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/librawall1"
+
+    tools:context=".library_registration">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="NAME" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName72"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView69"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="PLACE" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName71"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView74"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="IMAGE" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName67"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/balr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BROWSE" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="EMAIL" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView72"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="PHONE NO." />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView71"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="LATITUDE" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName69"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView70"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="LONGITUDE" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName68"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textViewuname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="USERNAME" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonNameuname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textViewpwrd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonNamepassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/balr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER" />
+    </TableRow>
+</LinearLayout>

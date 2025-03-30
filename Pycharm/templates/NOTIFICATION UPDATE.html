@@ -1,0 +1,48 @@
+{#<html>#}
+{#<head>#}
+{#<title>NOTIFICATON UPDATE</title>#}
+{#</head>#}
+{% extends 'home.html' %}
+{% block body %}
+<body> <br><br>
+<div class="container-fluid">
+<div align="center">
+<form  name="form1" method="post" action="/notificationsearch#about">
+  <table  style="width:95%;" border="1"class="TABLE table-dark text-white">
+    <tr>
+      <td colspan="3">
+          <div class="input-group mb-1"> <span class="col-form-label-sm"> DATE : </span>&nbsp;
+        <input type="date" class="form-control" name="textfield" id="textfield" required />
+              <div class="input-group-append">
+        <input type="submit" name="submit" value="SEARCH" class="btn btn-dark" />
+      </div></div></td>
+      </tr>
+    <tr>
+      <td width="127">NOTIFICATION</td>
+      <td width="96">DATE</td>
+      <td width="107">&nbsp;</td>
+    </tr>
+              {% for i in val %}
+
+    <tr>
+      <td>{{ i.notification }}</td>
+      <td>{{ i.date }}</td>
+
+      <td><div align="center"><a href="/notdel/{{i.id}}">DELETE</a></div></td>
+    </tr>
+      {% endfor %}
+    <tr>
+
+      <td colspan="3"><div align="center">
+        <a href="sendnotification#about">ADD NEW</a>
+      </div></td>
+    </tr>
+  </table>
+  <p></p>
+  <p>&nbsp;</p>
+</form>
+</div>
+</div>
+</body>
+{% endblock %}
+{#</html>#}

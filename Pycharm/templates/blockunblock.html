@@ -1,0 +1,48 @@
+{#<html>#}
+{#<head>#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+
+
+{% extends 'home.html' %}
+{% block body %}
+    <body>
+    <br><br>
+    <div class="container-fluid">
+<form name="form1" method="post" action="/reportsearch#about">
+  <table style="width:95%;" border="1" align="center"  class="TABLE table-dark text-white" >
+      <tr>
+        <td colspan="4">
+            <div class="input-group mb-1">
+                <span class="col-form-label-sm"> NAME : </span>&nbsp;
+                    <input type="text" name="textfield" id="textfield" class="form-control text-white" required>
+                        <div class="input-group-append">
+                            <input type="submit" name="submit" value="SEARCH" class="btn btn-dark" >
+                        </div>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td width="46">NAME</td>
+        <td width="62">REASON</td>
+        <td width="50">LIBRARY NAME</td>
+        <td width="169">&nbsp;</td>
+      </tr>
+      {% for i in  val %}
+      <tr>
+        <td>{{ i.USER.fname }} {{ i.USER.lname }}</td>
+        <td>{{ i.reason }}</td>
+        <td>{{ i.LIBRARY.name }}</td>
+
+            {% if i.USER.LOGIN.type == 'user' %}
+          <td><a href ="/block/{{i.USER.LOGIN.id}}">BLOCK</a></td>{% else %}
+			<td><a href ="/unblock/{{i.USER.LOGIN.id}}">UNBLOCK</a></td>{% endif %}
+
+      </tr>
+    {% endfor %}
+  </table>
+ </form>
+    </div>
+</body>
+
+{% endblock %}

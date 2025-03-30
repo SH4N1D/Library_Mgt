@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/userwall"
+    tools:context=".user_donateandsuggest">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="BOOK NAME" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="IMAGE" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName5"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/bud1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="browse" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="AUTHOR" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="DETAILS" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="STOCK" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="CATEGORY" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="REVIEW" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="TYPE" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bud2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="upload" />
+    </TableRow>
+
+</LinearLayout>

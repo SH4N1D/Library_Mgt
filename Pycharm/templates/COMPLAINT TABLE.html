@@ -1,0 +1,44 @@
+{#<html>#}
+{#<head>#}
+{#<title>COMPLAINT TABLE</title>#}
+{#</head>#}
+{% extends 'home.html' %}
+{% block body %}
+<body>    <br><br>
+
+<div class="container-fluid">
+<div align="center">
+<form id="form1" name="form1" method="post" action="/complaintsearch#about">
+    <table style="width:95%;" border="1" class="TABLE table-dark text-white">
+      <tr>
+        <td colspan="4" scope="col">
+            <div class="input-group mb-1"><span class="col-form-label-sm"> DATE : </span>&nbsp;
+        <input type="date" name="textfield"  class="form-control" class="btn btn-outline-dark" required />
+                <div class="input-group-append">
+        <input type="submit" name="submit"  value="SEARCH" class="btn btn-dark"/></div></div></td>
+      </tr>
+      <tr>
+        <td width="88" scope="col">NAME </td>
+        <td width="97" scope="col">COMPLAINT</td>
+        <td width="43" scope="col">DATE</td>
+        <td width="33" scope="col">&nbsp;</td>
+      </tr>
+      <tr>
+          {% for i in val %}
+        <td>{{ i.USER.fname }} {{ i.USER.lname }}</td>
+        <td>{{i.complaint}}</td>
+        <td>{{i.date}}</td>
+              {% if i.reply == 'pending' %}
+        <td><a href="{% url 'reply' id=i.id %}#about">REPLY</a></td>
+              {% else %}
+              <td>{{ i.reply }}</td>
+              {% endif %}
+      </tr>
+        {% endfor %}
+    </table>
+</form>
+</div>
+</div>
+</body>
+{% endblock %}
+{#</html>#}

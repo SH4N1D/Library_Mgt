@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".user_libraryhome">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/ulh1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="BOOKS" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/ulh2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="catalog" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/ulh3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="EVENTS" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/ulh4"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="posts" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/ulh5"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="CHAT" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="donate or suggest" />
+    </TableRow>
+</LinearLayout>

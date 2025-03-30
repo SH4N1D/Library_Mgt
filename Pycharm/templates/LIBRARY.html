@@ -1,0 +1,47 @@
+
+{% extends 'home.html' %}
+{% block body %}
+    <br><br>
+<div class="container-fluid">
+<form id="form1" name="form1" method="post" action="librarysearch#about">
+  <table style="width:95%;" border="1"  align="center" class="TABLE table-dark text-white" >
+      <tr><td colspan="8">
+          <div class="input-group mb-1"><span class="col-form-label-sm"> NAME : </span>&nbsp;
+       <input type="text" name="textfield" id="textfield"  class="form-control text-white" required>
+                            <div class="input-group-append">
+        <input type="submit" class="btn btn-dark" name="submit" value="SEARCH"></div></div></td>
+      </tr>
+      <tr>
+        <td>NAME</td>
+        <td>IMAGE</td>
+        <td>PLACE</td>
+        <td>PHONE_NO</td>
+        <td>EMAIL</td>
+        <td>LATITUDE</td>
+        <td>LONGITUDE</td>
+        <td>STATUS</td>
+      </tr>
+      {% for i in val %}
+      <tr>
+        <td>{{i.name }}</td>
+        <td><img src="{{i.image.url }}" width="500" height="500"> </td>
+        <td>{{i.place }}</td>
+        <td>{{i.phoneno }}</td>
+        <td>{{i.email }}</td>
+        <td>{{i.longitude}}</td>
+        <td>{{i.latitude }}</td>
+          {% if i.LOGIN.type == 'library' %}
+              <td>Accepted</td>
+              {% elif i.LOGIN.type == 'reject' %}
+              <td>Rejected</td>
+               {% else %}
+        <td><a href="{% url "accept"   id=i.LOGIN.id %}"> ACCEPT </a> &nbsp; /&nbsp;
+              <a href="{% url "reject"   id=i.LOGIN.id %}"> REJECT</a>
+       {% endif %}
+      </tr>
+    {% endfor %}
+
+  </table>
+</form>
+</div>
+{% endblock %}

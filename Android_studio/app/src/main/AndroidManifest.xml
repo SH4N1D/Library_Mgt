@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.librarymanagement">
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/moon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/moon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Librarymanagement"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".suggestions_more"
+            android:exported="false" />
+        <activity
+            android:name=".donation_more"
+            android:exported="false" />
+        <activity
+            android:name=".login1"
+            android:exported="false" />
+        <activity
+            android:name=".libraryhomedsgn"
+            android:exported="false" />
+        <activity
+            android:name=".userlibhomdesign"
+            android:exported="false" />
+        <activity
+            android:name=".userhomedesign"
+            android:exported="false" />
+        <activity
+            android:name=".silly"
+            android:exported="false" />
+        <activity
+            android:name=".forgotpswd"
+            android:exported="false" />
+        <activity
+            android:name=".lib_more"
+            android:exported="false" />
+        <activity
+            android:name=".user_more"
+            android:exported="false" />
+        <activity
+            android:name=".library_registration"
+            android:exported="false" />
+        <activity
+            android:name=".placeorder_new"
+            android:exported="false" />
+        <activity
+            android:name=".user_registration"
+            android:exported="false" />
+        <activity
+            android:name=".add_levents"
+            android:exported="false" />
+        <activity
+            android:name=".user_addwritting"
+            android:exported="false" />
+        <activity
+            android:name=".user_libraryevents"
+            android:exported="false" />
+        <activity
+            android:name=".Test"
+            android:exported="false" />
+        <activity
+            android:name=".user_viewauthorboard"
+            android:exported="false" />
+        <activity
+            android:name=".user_sentcomplaint"
+            android:exported="false" />
+        <activity
+            android:name=".user_complaint"
+            android:exported="false" />
+        <activity
+            android:name=".user_ratingandreview"
+            android:exported="false" />
+        <activity
+            android:name=".user_adminnotify"
+            android:exported="false" />
+        <activity
+            android:name=".user_customlibrary"
+            android:exported="false" />
+        <activity
+            android:name=".user_duedatenotify"
+            android:exported="false" />
+        <activity
+            android:name=".user_chat"
+            android:exported="false" />
+        <activity
+            android:name=".user_donateandsuggest"
+            android:exported="false" />
+        <activity
+            android:name=".user_booklog"
+            android:exported="false" />
+        <activity
+            android:name=".user_librarybooks"
+            android:exported="false" />
+        <activity
+            android:name=".user_libraryhome"
+            android:exported="false" />
+        <activity
+            android:name=".user_viewlibraries"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".user" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".user_home"
+            android:exported="false" />
+        <activity
+            android:name=".bookstaken"
+            android:exported="false" />
+        <activity
+            android:name=".authbrd"
+            android:exported="false" />
+        <activity
+            android:name=".libraryevnts"
+            android:exported="false" />
+        <activity
+            android:name=".suggestions"
+            android:exported="false" />
+        <activity
+            android:name=".admnnotftn"
+            android:exported="false" />
+        <activity
+            android:name=".chats"
+            android:exported="false" />
+        <activity
+            android:name=".donations"
+            android:exported="false" />
+        <activity
+            android:name=".duedates"
+            android:exported="false" />
+        <activity
+            android:name=".vieworders"
+            android:exported="false" />
+        <activity
+            android:name=".libbooks"
+            android:exported="false" />
+        <activity
+            android:name=".libhome"
+            android:exported="false" />
+        <activity
+            android:name=".lreport"
+            android:exported="false" />
+        <activity
+            android:name=".extndduedate"
+            android:exported="false" />
+        <activity
+            android:name=".booknotfy"
+            android:exported="false" />
+        <activity
+            android:name=".lorder"
+            android:exported="false" />
+        <activity
+            android:name=".addbook"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

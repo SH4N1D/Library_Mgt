@@ -1,0 +1,31 @@
+
+{%  extends 'home.html' %}
+{% block body %}
+<body> <br><br>
+<div class="container-fluid">
+<form id="form1" name="form1" method="post" action="/creply#about">
+  <div align="center">
+
+    <table style="width:95%;" border="1" class="TABLE table-dark text-white">
+      <tr>
+        <td>REPLY : <br>
+            <br>
+          <textarea cols="3" rows="5" name="textfield2" class="form-control text-white"required>PLEASE ENTER THE TEXT HERE
+          </textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><div align="center">
+          <label>
+          <input type="submit" name="Submit" class="btn btn-outline-dark"  value="SEND" />
+          </label>
+        </div></td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <label></label>
+  </div>
+</form>
+</div>
+</body>
+{% endblock %}
