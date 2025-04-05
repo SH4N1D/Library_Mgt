@@ -46,13 +46,13 @@ Our innovative library management system revolutionizes traditional library oper
 
 ## Getting Started
 
-### Web Admin Setup
+### How to Run the Project
 ```bash
 # Clone repository
-git clone https://github.com/shanid/Library_Mngt.git
+git clone https://github.com/SH4N1D/Library_Mgt.git
 
 # Set up virtual environment
-cd Library_Mngt/
+cd Library_Mgt/
 python -m venv venv
 venv\Scripts\activate  # On Windows
 
@@ -68,7 +68,7 @@ python manage.py runserver
 
 ### Mobile App Setup
 1. Open Android Studio
-2. Import project from `/Library_Mngt/Android_Studio`
+2. Import project from `/Library_Mgt/Android_Studio`
 3. Sync Gradle dependencies
 4. Build and run on emulator or device
 
@@ -95,5 +95,3 @@ graph TD
 MIT License - Copyright (c) 2023 Shanid
 
 ---
-
-
